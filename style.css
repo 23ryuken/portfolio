@@ -207,7 +207,10 @@ main > section,
   gap: 1rem;
   height: var(--header-h);
   margin-bottom: calc(var(--header-h) * -1);
-  background: linear-gradient(to bottom, rgba(8, 11, 14, 0.85), rgba(8, 11, 14, 0));
+  background: rgba(8, 11, 14, 0.94);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .wordmark {
