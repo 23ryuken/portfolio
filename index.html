@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eric Mbithi is a full-stack software engineer in Nairobi building web apps with MongoDB, Express, React and Node.js. See his projects Lingofy, BudgetBuddy and SkillCast.">
+  <meta name="description" content="Eric Mbithi is a full-stack software engineer building web apps with MongoDB, Express, React and Node.js. See his projects Lingofy, BudgetBuddy and SkillCast.">
   <title>Eric Mbithi | MERN Stack Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header>
-    <a href="#home">Eric Mbithi</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home">
+      <span class="wordmark-mark" aria-hidden="true"></span>
+      Eric Mbithi
+    </a>
     <nav aria-label="Main">
       <ul>
         <li><a href="#about">About</a></li>
@@ -24,173 +30,234 @@
 
   <main id="main">
 
-    <!-- HERO -->
-    <section id="home" aria-labelledby="hero-title">
-      <p>Portfolio · Nairobi, Kenya</p>
-      <h1 id="hero-title">Hi, I’m Eric Mbithi.</h1>
-      <p>Software Engineer</p>
-      <p>
-        I build full-stack web applications with MongoDB, Express, React and
-        Node.js, from the database and API to the interface. I care about
-        readable code, clean API design, and work that lasts.
-      </p>
-      <p>
-        <a href="#work">Explore my work</a>
-        <a href="#contact">Get in touch</a>
-      </p>
+    <!-- 01 HERO -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <canvas id="stars" aria-hidden="true"></canvas>
+
+      <div class="hero-content">
+        <p class="section-label">
+          <span class="section-number">01</span>
+          <span class="section-name">The Event Horizon</span>
+        </p>
+        <h1 id="hero-title">At the edge<br>of possibility.</h1>
+        <div class="hero-intro">
+          <p class="hero-role">I’m Eric, a MERN stack developer.</p>
+          <p class="hero-copy">
+            Building end-to-end web apps with MongoDB, Express, React and
+            Node.js. Built with curiosity. Grounded in the details.
+          </p>
+        </div>
+        <p class="actions">
+          <a class="link link--primary" href="#work">Explore my work</a>
+          <a class="link" href="#contact">Let’s talk</a>
+        </p>
+      </div>
+
+      <div class="hero-footer">
+        <p class="status">Open to opportunities</p>
+        <a class="scroll-cue" href="#about">Scroll to discover <span aria-hidden="true">↓</span></a>
+      </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" aria-labelledby="about-title">
-      <h2 id="about-title">A little about me</h2>
-      <p>I’m Eric, a full-stack developer who builds web apps from database to interface.</p>
-      <p>
-        I trained at Moringa School and build mainly with the MERN stack,
-        adding PostgreSQL when the data is relational. I lean towards the
-        backend, where APIs, data models and business logic live.
+    <!-- 02 ABOUT -->
+    <section id="about" class="about" aria-labelledby="about-title">
+      <p class="section-label">
+        <span class="section-number">02</span>
+        <span class="section-name">The Human Element</span>
       </p>
-      <p>
-        I like owning a feature end to end, from schema to screen, and I
-        believe the best work comes from curiosity, clear communication, and
-        care for the details that make an experience feel complete.
-      </p>
-      <dl>
+
+      <div class="split about-main">
+        <h2 id="about-title">Every journey<br>begins on Earth.</h2>
+        <div class="about-story">
+          <p class="about-lead">I’m Eric Mbithi. I build full-stack apps from database to interface.</p>
+          <p>
+            I trained at Moringa School and build mainly with the MERN stack:
+            MongoDB, Express, React and Node.js, adding PostgreSQL when the data
+            is relational. I lean towards the backend, where APIs and data models live.
+          </p>
+          <p>
+            I care about readable code, clean API design, and interfaces that stay
+            fast and accessible. I like owning a feature end to end, from schema to screen.
+          </p>
+        </div>
+      </div>
+
+      <dl class="about-details">
         <div>
-          <dt>Based in</dt>
-          <dd>Nairobi, Kenya</dd>
+          <dt>The stack</dt>
+          <dd>MongoDB · Express · React · Node.js</dd>
+          <dd class="detail-context">Plus PostgreSQL for relational data</dd>
+        </div>
+        <div>
+          <dt>Training</dt>
+          <dd>Moringa School</dd>
+          <dd class="detail-context">Completed a training program</dd>
         </div>
         <div>
           <dt>Focus</dt>
-          <dd>Backend-leaning full-stack development</dd>
-        </div>
-        <div>
-          <dt>Availability</dt>
-          <dd>Open to opportunities</dd>
+          <dd>Backend-leaning full-stack</dd>
+          <dd class="detail-context">APIs, data models, and clean interfaces</dd>
         </div>
       </dl>
     </section>
 
-    <!-- WORK -->
-    <section id="work" aria-labelledby="work-title">
-      <h2 id="work-title">Selected work</h2>
-      <p>Three full-stack projects built with the MERN stack, from auth and APIs to AI and real-time video.</p>
+    <!-- 03 WORK -->
+    <section id="work" class="work" aria-labelledby="work-title">
+      <div class="work-intro">
+        <p class="section-label">
+          <span class="section-number">03</span>
+          <span class="section-name">Mission Archives</span>
+        </p>
+        <div class="split work-heading">
+          <h2 id="work-title">Real projects.<br>Built end to end.</h2>
+          <p>Three full-stack projects built with the MERN stack, from auth and APIs to AI and real-time video.</p>
+        </div>
+      </div>
 
-      <article aria-labelledby="project-1-title">
-        <!-- Set width/height to the real pixel size of your exported file -->
-        <img src="assets/lingofy.png" alt="Lingofy home screen showing the user's friends and a prompt to meet new language learners" width="1600" height="820" loading="lazy" decoding="async">
-        <p>Social app · Full-stack</p>
-        <h3 id="project-1-title">Lingofy</h3>
-        <p>Language practice, not a classroom.</p>
-        <p>
-          A social language-learning app for finding conversation partners.
-          Discover learners, send friend requests, chat in real time and jump
-          into a video call, powered by Stream.
-        </p>
-        <ul aria-label="Lingofy technologies">
-          <li>MERN</li>
-          <li>Stream API</li>
-          <li>JWT</li>
-        </ul>
-        <p>
-          <a href="https://lingofy-1.onrender.com/" target="_blank" rel="noopener noreferrer">Live demo</a>
-          <a href="https://github.com/iiTzEric/Lingofy" target="_blank" rel="noopener noreferrer">Source code</a>
-        </p>
+      <article class="project" aria-labelledby="project-1-title">
+        <div class="project-story">
+          <div class="project-identity">
+            <p class="project-category">01 / Social app / Full-stack</p>
+            <h3 id="project-1-title">Lingofy</h3>
+          </div>
+          <p class="project-headline">Language practice,<br>not a classroom.</p>
+          <p class="project-description">
+            A social language-learning app for finding conversation partners.
+            Discover learners, send friend requests, chat in real time and jump
+            into a video call, powered by Stream.
+          </p>
+          <ul class="tags" aria-label="Lingofy technologies">
+            <li>MERN</li>
+            <li>Stream API</li>
+            <li>JWT</li>
+          </ul>
+          <p class="project-links">
+            <a class="link link--primary" href="https://lingofy-1.onrender.com/" target="_blank" rel="noopener noreferrer">Live demo</a>
+            <a class="link" href="https://github.com/iiTzEric/Lingofy" target="_blank" rel="noopener noreferrer">Source code</a>
+          </p>
+        </div>
+        <img class="project-visual" src="assets/lingofy.png" alt="Lingofy home screen showing the user's friends and a prompt to meet new language learners" width="1890" height="968" loading="lazy" decoding="async">
       </article>
 
-      <article aria-labelledby="project-2-title">
-        <img src="assets/budgetbuddy.png" alt="BudgetBuddy dashboard overview with expense chart, total expenses, active budgets and savings goals" width="1600" height="820" loading="lazy" decoding="async">
-        <p>Fintech · Full-stack</p>
-        <h3 id="project-2-title">BudgetBuddy</h3>
-        <p>Money, tracked. Advice, personal.</p>
-        <p>
-          A personal finance app for tracking expenses, budgets, savings goals
-          and investments, with an AI advisor (Groq, LLaMA 3.3) that reads your
-          real data to give actionable advice.
-        </p>
-        <ul aria-label="BudgetBuddy technologies">
-          <li>MERN</li>
-          <li>Groq AI</li>
-          <li>Recharts</li>
-        </ul>
-        <p>
-          <a href="https://budget-buddy-seven-jet.vercel.app" target="_blank" rel="noopener noreferrer">Live demo</a>
-          <a href="https://github.com/iiTzEric/BudgetBuddy" target="_blank" rel="noopener noreferrer">Source code</a>
-        </p>
+      <article class="project" aria-labelledby="project-2-title">
+        <div class="project-story">
+          <div class="project-identity">
+            <p class="project-category">02 / Fintech / Full-stack</p>
+            <h3 id="project-2-title">BudgetBuddy</h3>
+          </div>
+          <p class="project-headline">Money, tracked.<br>Advice, personal.</p>
+          <p class="project-description">
+            A personal finance app for tracking expenses, budgets, savings goals
+            and investments, with an AI advisor (Groq, LLaMA 3.3) that reads your
+            real data to give actionable advice.
+          </p>
+          <ul class="tags" aria-label="BudgetBuddy technologies">
+            <li>MERN</li>
+            <li>Groq AI</li>
+            <li>Recharts</li>
+          </ul>
+          <p class="project-links">
+            <a class="link link--primary" href="https://budget-buddy-seven-jet.vercel.app" target="_blank" rel="noopener noreferrer">Live demo</a>
+            <a class="link" href="https://github.com/iiTzEric/BudgetBuddy" target="_blank" rel="noopener noreferrer">Source code</a>
+          </p>
+        </div>
+        <img class="project-visual" src="assets/budgetbuddy.png" alt="BudgetBuddy dashboard overview with expense chart, total expenses, active budgets and savings goals" width="1920" height="971" loading="lazy" decoding="async">
       </article>
 
-      <article aria-labelledby="project-3-title">
-        <img src="assets/skillcast.png" alt="SkillCast landing page with the headline 'Learn anything. Teach everything.' and a Share a Skill button" width="1600" height="820" loading="lazy" decoding="async">
-        <p>Community platform · Full-stack</p>
-        <h3 id="project-3-title">SkillCast</h3>
-        <p>Share a skill. Find a teacher.</p>
-        <p>
-          A community platform where people list the skills they teach and
-          discover others to learn from. Search and filter listings, leave
-          reviews, and reach instructors directly.
-        </p>
-        <ul aria-label="SkillCast technologies">
-          <li>MERN</li>
-          <li>JWT</li>
-          <li>REST API</li>
-        </ul>
-        <p>
-          <a href="https://skill-cast.vercel.app" target="_blank" rel="noopener noreferrer">Live demo</a>
-          <a href="https://github.com/iiTzEric/SkillCast" target="_blank" rel="noopener noreferrer">Source code</a>
-        </p>
+      <article class="project" aria-labelledby="project-3-title">
+        <div class="project-story">
+          <div class="project-identity">
+            <p class="project-category">03 / Community / Full-stack</p>
+            <h3 id="project-3-title">SkillCast</h3>
+          </div>
+          <p class="project-headline">Share a skill.<br>Find a teacher.</p>
+          <p class="project-description">
+            A community platform where people list the skills they teach and
+            discover others to learn from. Search and filter listings, leave
+            reviews, and reach instructors directly.
+          </p>
+          <ul class="tags" aria-label="SkillCast technologies">
+            <li>MERN</li>
+            <li>JWT</li>
+            <li>REST API</li>
+          </ul>
+          <p class="project-links">
+            <a class="link link--primary" href="https://skill-cast.vercel.app" target="_blank" rel="noopener noreferrer">Live demo</a>
+            <a class="link" href="https://github.com/iiTzEric/SkillCast" target="_blank" rel="noopener noreferrer">Source code</a>
+          </p>
+        </div>
+        <img class="project-visual" src="assets/skillcast.png" alt="SkillCast landing page with the headline 'Learn anything. Teach everything.' and a Share a Skill button" width="1890" height="974" loading="lazy" decoding="async">
       </article>
     </section>
 
-    <!-- STACK -->
-    <section id="stack" aria-labelledby="stack-title">
-      <h2 id="stack-title">From database to interface</h2>
-      <p>A full-stack toolkit for taking an idea from schema to shipped feature. These are the tools I reach for most.</p>
-      <div>
-        <h3>The frontend</h3>
-        <ul>
-          <li>React</li>
-          <li>Vite</li>
-          <li>JavaScript</li>
-          <li>HTML &amp; CSS</li>
-        </ul>
-      </div>
-      <div>
-        <h3>The backend</h3>
-        <ul>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>REST APIs</li>
-          <li>JWT authentication</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Data and workflow</h3>
-        <ul>
-          <li>MongoDB &amp; Mongoose</li>
-          <li>PostgreSQL</li>
-          <li>Git &amp; GitHub</li>
-        </ul>
+    <!-- 04 STACK -->
+    <section id="stack" class="stack" aria-labelledby="stack-title">
+      <p class="section-label">
+        <span class="section-number">04</span>
+        <span class="section-name">Ship Systems</span>
+      </p>
+
+      <div class="split stack-main">
+        <div class="stack-intro">
+          <h2 id="stack-title">From database<br>to interface.</h2>
+          <p>A full-stack toolkit for taking an idea from schema to shipped feature. These are the tools I reach for most.</p>
+          <p class="stack-motto">Always learning / Always iterating</p>
+        </div>
+
+        <ol class="capabilities">
+          <li>
+            <h3>The frontend</h3>
+            <p class="tools">React · Vite · JavaScript · HTML · CSS</p>
+            <p class="practice">Component-driven interfaces, responsive layouts, and state that stays predictable and easy to reason about.</p>
+          </li>
+          <li>
+            <h3>The backend</h3>
+            <p class="tools">Node.js · Express · REST APIs · JWT</p>
+            <p class="practice">Clean routing, validation, and APIs that are straightforward to consume, test, and extend.</p>
+          </li>
+          <li>
+            <h3>The data layer</h3>
+            <p class="tools">MongoDB · Mongoose · PostgreSQL · Git</p>
+            <p class="practice">Schemas modelled around real queries, plus a steady workflow: small commits, clear history, patient debugging.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Let’s work together</h2>
-      <p>Hiring, collaborating, or have a project in mind? I’d love to hear what you’re building.</p>
-      <p><a href="mailto:ericmbithiofficial@gmail.com">ericmbithiofficial@gmail.com</a></p>
-      <ul>
-        <li>
-          <a href="https://github.com/iiTzEric" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </li>
-        <!-- Add LinkedIn here once you have the URL:
-        <li><a href="https://www.linkedin.com/in/your-handle/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li> -->
-      </ul>
+    <!-- 05 CONTACT -->
+    <section id="contact" class="finale" aria-labelledby="contact-title">
+      <p class="section-label">
+        <span class="section-number">05</span>
+        <span class="section-name">Beyond the Horizon</span>
+      </p>
+
+      <div class="contact-invite">
+        <h2 id="contact-title">The next frontier<br>starts with a hello.</h2>
+        <p>Hiring, collaborating, or have a project in mind? I’d love to hear what you’re building.</p>
+        <p><a class="link link--primary" href="mailto:ericmbithiofficial@gmail.com">Send me an email</a></p>
+      </div>
+
+      <div class="contact-channels">
+        <div class="channel">
+          <p class="channel-label">Direct communication</p>
+          <a class="email" href="mailto:ericmbithiofficial@gmail.com">ericmbithiofficial@gmail.com</a>
+        </div>
+        <ul class="socials">
+          <li><a class="link" href="https://github.com/iiTzEric" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <!-- Add LinkedIn once you have the URL:
+          <li><a class="link" href="https://www.linkedin.com/in/your-handle/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li> -->
+        </ul>
+        <p class="status">Signal open / let’s connect</p>
+      </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>© 2026 Eric Mbithi. All rights reserved.</p>
-    <a href="#home">Back to top</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Eric Mbithi</p>
+      <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
   </footer>
 
   <script src="index.js"></script>
