@@ -54,7 +54,7 @@ let last = null;
 function update(dt) {
   for (const star of stars) {
     star.y -= star.speed * 0.05 * dt;
-    if (star.y < 0) star.y += 1;
+    star.y = ((star.y % 1) + 1) % 1;
   }
 }
 
